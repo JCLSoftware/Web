@@ -7,7 +7,7 @@ const server = http.createServer((request, response) => {
  response.end(JSON.stringify({     
      data: Array(1, 2, 3, 4)
  }));/**/
- /*response.end("Hello");/**/
+ response.end("Hello");/**/
 
 db.serialize(() => {    
     try{
